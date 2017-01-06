@@ -5,7 +5,7 @@ The application has two parts:
 * **Server**: NodeJS + Express + Apollo Server + GraphQL + Mongoose + MongoDB.
 * **Client**: React Native + Apollo Client
 
-## Setup
+## :soccer: Setup
 
 Clone this repo:
 ```
@@ -23,16 +23,34 @@ Install dependencies:
 yarn
 ```
 
-## Usage
-
+### Client Setup
 Navigate into server folder:
 ```
-cd server
+cd client
 ```
+
+Install dependencies:
+```
+npm install
+```
+
+Set the 'const IP' values with yours IP, on file:
+```
+index.android.js
+```
+
+## :soccer: Usage
+
+### Server Usage
 
 Start MongoDB Server:
 ```
 mongod
+```
+
+Navigate into server folder:
+```
+cd server
 ```
 
 Start project server:
@@ -52,4 +70,16 @@ query {
     score
   }
 }
+```
+
+### Client Usage
+
+Navigate into client folder:
+```
+cd client
+```
+
+Start app client:
+```
+react-native run-android
 ```
